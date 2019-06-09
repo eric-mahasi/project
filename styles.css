@@ -2,10 +2,6 @@ body{
     margin: 0;
 }
 
-nav{
-    font-family: 'Courier New', Courier, monospace
-}
-
 .hero-image{
     background-image: url("technology.jpg");
     height: 900px;
@@ -21,6 +17,11 @@ nav{
     position: absolute;
     top: 30%;
     left: 30%;
+    color: white;
+}
+
+.navbar{
+    font-family: 'Courier New', Courier, monospace;
     color: white;
 }
 
