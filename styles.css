@@ -36,3 +36,8 @@ a{
     object-fit: cover;
 
 }
+
+.about{
+    overflow: auto;
+    text-align: center;
+}
