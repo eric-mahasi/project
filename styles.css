@@ -4,7 +4,7 @@ body{
 
 .hero-image{
     background-image: url("technology.jpg");
-    height: 900px;
+    height: 600px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
