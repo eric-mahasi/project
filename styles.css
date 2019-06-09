@@ -30,3 +30,9 @@ a{
     padding: 15px;
 }
 
+#headshot{
+    float: left;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
