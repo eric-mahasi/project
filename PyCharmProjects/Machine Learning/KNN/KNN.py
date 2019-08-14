@@ -28,3 +28,11 @@ model = KNeighborsClassifier(n_neighbors=9)
 model.fit(x_train, y_train)
 accuracy = model.score(x_test, y_test)
 print(accuracy)
+
+# Checking the predictions
+predicted = model.predict(x_test)
+names = ["unacc", "acc", "good", "vgood"]
+
+for x in range(len(x_test)):
+    print("Predicted: ", names[predicted[x]], "Data: ", x_test[x], "Actual: ",
+          names[y_test[x]])
