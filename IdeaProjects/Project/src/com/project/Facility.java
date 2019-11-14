@@ -3,6 +3,7 @@ package com.project;
 public class Facility {
     private String facilityId;
     private String facilityType;
+    private String facilityName;
     private int capacity;
     private int numberOfProjectors;
     private int numberOfWhiteBoards;
@@ -23,6 +24,14 @@ public class Facility {
 
     public void setFacilityType(String facilityType) {
         this.facilityType = facilityType;
+    }
+
+    public String getFacilityName() {
+        return facilityName;
+    }
+
+    public void setFacilityName(String facilityName) {
+        this.facilityName = facilityName;
     }
 
     public int getCapacity() {
