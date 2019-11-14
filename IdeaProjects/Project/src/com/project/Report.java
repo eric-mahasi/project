@@ -22,7 +22,7 @@ public class Report {
             String name = facility.getFacilityName();
             int capacity = facility.getCapacity();
             int projectors = facility.getNumberOfProjectors();
-            int whiteboards = facility.getNumberOfWhiteBoards();
+            int whiteboards = facility.getNumberOfWhiteboards();
             System.out.println("[Room name:] " + name);
             System.out.println("[Capacity:] " + capacity);
             System.out.println("[Projectors:] " + projectors);

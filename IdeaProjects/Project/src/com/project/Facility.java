@@ -6,7 +6,7 @@ public class Facility {
     private String facilityName;
     private int capacity;
     private int numberOfProjectors;
-    private int numberOfWhiteBoards;
+    private int numberOfWhiteboards;
     private int numberOfCleaners;
     private boolean booked;
 
@@ -50,12 +50,12 @@ public class Facility {
         this.numberOfProjectors = numberOfProjectors;
     }
 
-    public int getNumberOfWhiteBoards() {
-        return numberOfWhiteBoards;
+    public int getNumberOfWhiteboards() {
+        return numberOfWhiteboards;
     }
 
-    public void setNumberOfWhiteBoards(int numberOfWhiteBoards) {
-        this.numberOfWhiteBoards = numberOfWhiteBoards;
+    public void setNumberOfWhiteboards(int numberOfWhiteboards) {
+        this.numberOfWhiteboards = numberOfWhiteboards;
     }
 
     public int getNumberOfCleaners() {
