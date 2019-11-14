@@ -14,4 +14,21 @@ public class Report {
         }
         System.out.println();
     }
+
+    public static void displayRoomDetails(ArrayList<Facility> facilities) {
+        System.out.println(shortLine);
+        System.out.println("LIST OF ROOM DETAILS");
+        for(Facility facility: facilities) {
+            String name = facility.getFacilityName();
+            int capacity = facility.getCapacity();
+            int projectors = facility.getNumberOfProjectors();
+            int whiteboards = facility.getNumberOfWhiteBoards();
+            System.out.println("[Room name:] " + name);
+            System.out.println("[Capacity:] " + capacity);
+            System.out.println("[Projectors:] " + projectors);
+            System.out.println("[Whiteboards:] " + whiteboards);
+            System.out.println();
+        }
+        System.out.println();
+    }
 }

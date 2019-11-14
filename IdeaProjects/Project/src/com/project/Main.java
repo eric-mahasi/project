@@ -12,9 +12,15 @@ public class Main {
 
         facility1.setFacilityName("Main Conference Hall");
         facility1.setFacilityType("Room");
+        facility1.setCapacity(70);
+        facility1.setNumberOfProjectors(2);
+        facility1.setNumberOfWhiteBoards(2);
 
         facility2.setFacilityName("Meeting Delight");
         facility2.setFacilityType("Room");
+        facility2.setCapacity(20);
+        facility2.setNumberOfProjectors(1);
+        facility2.setNumberOfWhiteBoards(1);
 
         facility3.setFacilityName("East Wing");
         facility3.setFacilityType("Corridor");
@@ -47,6 +53,11 @@ public class Main {
         bookings.add(booking4);
         bookings.add(booking5);
 
+        ArrayList<Facility> facilities = new ArrayList<>();
+        facilities.add(facility1);
+        facilities.add(facility2);
+
         Report.displayFacilities(bookings);
+        Report.displayRoomDetails(facilities);
      }
 }
