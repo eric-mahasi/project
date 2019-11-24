@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 public class Report {
     private static String shortLine = "==================================";
+    private static String longLine =
+            "==============================================";
     public static void displayFacilities(ArrayList<Booking> bookings) {
         System.out.println("LIST OF ALL FACILITIES");
         System.out.println(shortLine);
@@ -30,5 +32,18 @@ public class Report {
             System.out.println();
         }
         System.out.println();
+    }
+
+    public static void cleanedByTwo(ArrayList<Facility> facilities){
+        System.out.println(longLine);
+        System.out.println("LIST OF FACILITIES CLEANED BY TWO CLEANERS");
+        System.out.println(longLine);
+        for(Facility facility: facilities){
+            int cleaners = facility.getNumberOfCleaners();
+            if(cleaners == 2){
+                System.out.println("[Room]" + facility.getFacilityName());
+                System.out.println();
+            }
+        }
     }
 }
