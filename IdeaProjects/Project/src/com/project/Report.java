@@ -42,7 +42,7 @@ public class Report {
         for(Facility facility: facilities){
             int cleaners = facility.getNumberOfCleaners();
             if(cleaners == 2){
-                System.out.println("[Room]" + facility.getFacilityName());
+                System.out.println("[Room] " + facility.getFacilityName());
                 System.out.println();
             }
         }
@@ -58,7 +58,8 @@ public class Report {
             String name = facility.getFacilityName();
             String type = facility.getFacilityType();
             if(clean2 == null){
-                System.out.println("[" + type + "]" + " " + name + " - " + clean);
+                System.out.println("[" + type + "]" + " " + name + " - " +
+                        "[" + clean + "]");
             }
             else{
                 System.out.println("[" + type + "]" + " " + name + " - " + clean + " " +clean2);
