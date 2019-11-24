@@ -15,21 +15,28 @@ public class Main {
         facility1.setCapacity(70);
         facility1.setNumberOfProjectors(2);
         facility1.setNumberOfWhiteboards(2);
+        facility1.setNumberOfCleaners(2);
+        facility1.setCleanDay1("MONDAY");
 
         facility2.setFacilityName("Meeting Delight");
         facility2.setFacilityType("Room");
         facility2.setCapacity(20);
         facility2.setNumberOfProjectors(1);
         facility2.setNumberOfWhiteboards(1);
+        facility2.setCleanDay1("TUESDAY");
 
         facility3.setFacilityName("East Wing");
         facility3.setFacilityType("Corridor");
+        facility3.setCleanDay1("WEDNESDAY");
 
         facility4.setFacilityName("West Wing");
         facility4.setFacilityType("Corridor");
+        facility4.setCleanDay1("THURSDAY");
 
         facility5.setFacilityName("Main");
         facility5.setFacilityType("Reception");
+        facility5.setCleanDay1("MONDAY");
+        facility5.setCleanDay2("FRIDAY");
 
         Booking booking1 = new Booking();
         booking1.setFacility(facility1);
@@ -56,8 +63,14 @@ public class Main {
         ArrayList<Facility> facilities = new ArrayList<>();
         facilities.add(facility1);
         facilities.add(facility2);
+        facilities.add(facility3);
+        facilities.add(facility4);
+        facilities.add(facility5);
 
         Report.displayFacilities(bookings);
         Report.displayRoomDetails(facilities);
+        Report.cleanedByTwo(facilities);
+        Report.showSchedule(facilities);
+        Report.toDay(facilities);
      }
 }
