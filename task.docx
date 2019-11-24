@@ -1,0 +1,43 @@
+GROUP PROJECT
+A Conference Center Cleaning Management System works as follows. Several areas (facilities) in the center need to be cleaned periodically. These facilities include: conference rooms, corridors, reception, etc. All facilities are cleaned once a week, except for the reception which is cleaned twice a week.
+Each facility is assigned to one cleaner. However, some facilities are too big to be cleaned by one person, therefore, such facilities are assigned to two cleaners.
+Design and implement the solution to this system, so that it can produce reports similar to the screen shot attached.
+Project Requirements
+1) Each group should have 3 or 4 members.
+
+2) Draw a class diagram that models this particular system.
+
+3) Implement the class diagram drawn using Java. The implemented system must be able to produce the reports shown in the screen-shot attached. Note that, the last report might be different depending on the day of the week the project is run.
+
+4) Your Java code MUST be able to run. It should not contain any syntax errors that prevent it from compiling or running.
+
+5) All input data must be hard-coded into the application to facilitate easy testing, but all reports must be dynamically generated.
+
+6) The project must be uploaded on black-board by the 22nd of November 2019.
+1st	
+How to Package your Work
+1) Create a folder and name it your group number. For example, group-1.
+
+2) Create a PDF or MS Word file that contains your group members, your class diagram, and any assumptions you might have made.
+
+3) Place this PDF or MS Word file inside the folder you created.
+
+4) Go to Netbeans and export your project as a ZIP file ( File > Export Project ).
+
+5) Place the generated project ZIP file inside the folder you created.
+
+6) Once you are done, zip your work by right-clicking on your group folder and selecting "Add to archive".
+
+7) Upload the file created to blackboard. (The file will have either a .rar or .zip extension). Only one group member should upload the project.
+
+
+Mark Distribution
+*	
+*	Class Diagram …………………………………. 10 marks
+*	
+*	Java Implementation ……………………………. 15 marks
+*	
+
+*	
+*	Total Marks …………………………………… 25 marks
+*	
