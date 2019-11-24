@@ -26,11 +26,13 @@ public class Report {
             int capacity = facility.getCapacity();
             int projectors = facility.getNumberOfProjectors();
             int whiteboards = facility.getNumberOfWhiteboards();
-            System.out.println("[Room name:] " + name);
-            System.out.println("[Capacity:] " + capacity);
-            System.out.println("[Projectors:] " + projectors);
-            System.out.println("[Whiteboards:] " + whiteboards);
-            System.out.println();
+            if(projectors !=0 && whiteboards !=0) {
+                System.out.println("[Room name:] " + name);
+                System.out.println("[Capacity:] " + capacity);
+                System.out.println("[Projectors:] " + projectors);
+                System.out.println("[Whiteboards:] " + whiteboards);
+                System.out.println();
+            }
         }
         System.out.println();
     }
