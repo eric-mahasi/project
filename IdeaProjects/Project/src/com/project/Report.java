@@ -46,4 +46,23 @@ public class Report {
             }
         }
     }
+
+    public static void showSchedule(ArrayList<Facility> facilities){
+        System.out.println(longLine);
+        System.out.println("LIST OF CLEANING DAYS FOR ALL FACILITIES");
+        System.out.println(longLine);
+        for(Facility facility : facilities){
+            String clean = facility.getCleanDay1();
+            String clean2 = facility.getCleanDay2();
+            String name = facility.getFacilityName();
+            String type = facility.getFacilityType();
+            if(clean2 == null){
+                System.out.println("[" + type + "]" + " " + name + " - " + clean);
+            }
+            else{
+                System.out.println("[" + type + "]" + " " + name + " - " + clean + " " +clean2);
+            }
+       }
+        System.out.println();
+    }
 }
