@@ -1,5 +1,6 @@
 package com.project;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 
 public class Report {
@@ -64,5 +65,22 @@ public class Report {
             }
        }
         System.out.println();
+    }
+
+    public static void toDay(ArrayList<Facility> facilities){
+        System.out.println(longLine);
+        System.out.println("LIST OF FACILITIES TO BE CLEANED TODAY");
+        System.out.println(longLine);
+        String today = LocalDate.now().getDayOfWeek().name();
+        for(Facility facility : facilities){
+            String clean = facility.getCleanDay1();
+            String clean2 = facility.getCleanDay2();
+            String type = facility.getFacilityType();
+            String name = facility.getFacilityName();
+
+            if(today == clean || today == clean2){
+                System.out.println("[" + type + "] "+ name);
+            }
+        }
     }
 }
